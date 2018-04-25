@@ -1,8 +1,17 @@
 import React from 'react';
 
 const UserInput = (props) => {
+    const labelStyle = {
+        fontFamily: 'Helvetica',
+        fontSize: '12px',
+        color: 'red'
+    };
+
     return (
-        <input type="text" onChange={props.changeName} value={props.username} />
+        <div>
+            <label style={labelStyle}>Type anything: </label>
+            <input type="text" onChange={props.changeName} value={props.username} />
+        </div>
     );
 }
 
